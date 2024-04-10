@@ -1,11 +1,11 @@
 import logo from './logo.svg';
+import {Avatar, Badge, Button, Cell} from "@xelene/tgui";
 import './App.css';
-import {Avatar, Badge, Cell} from "@xelene/tgui";
 
 function App() {
   return (
       <Cell
-          after={<Badge type="number">99</Badge>}
+          after={<Button onClick={() => {alert("Hello world")}} mode={"filled"}>Click Me</Button>}
           before={<Avatar size={48} />}
           description="Description"
           subhead="Subhead"

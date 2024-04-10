@@ -11,7 +11,7 @@ import { AppRoot } from '@xelene/tgui';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <AppRoot>
+      <AppRoot platform={"base"}>
           <App />
       </AppRoot>
   </React.StrictMode>
