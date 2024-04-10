@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import {Avatar, Badge, Cell} from "@xelene/tgui";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Cell
+          after={<Badge type="number">99</Badge>}
+          before={<Avatar size={48} />}
+          description="Description"
+          subhead="Subhead"
+          subtitle="Subtitle"
+          titleBadge={<Badge type="dot" />}
+      >
+          Title
+      </Cell>
   );
 }
 

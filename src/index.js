@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import '@xelene/tgui/dist/styles.css';
+import { AppRoot } from '@xelene/tgui';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <AppRoot>
+          <App />
+      </AppRoot>
   </React.StrictMode>
 );
 
